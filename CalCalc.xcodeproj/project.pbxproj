@@ -24,6 +24,7 @@
 		53D7344B2B1A87F10025EC21 /* Progress10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7344A2B1A87F10025EC21 /* Progress10.swift */; };
 		53D7344D2B1A88110025EC21 /* Progress11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7344C2B1A88110025EC21 /* Progress11.swift */; };
 		53D7344F2B1A8D5B0025EC21 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7344E2B1A8D5B0025EC21 /* HomeScreen.swift */; };
+		53EA70062B21219800EA574F /* FoodDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA70052B21219800EA574F /* FoodDiary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		53D7344A2B1A87F10025EC21 /* Progress10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress10.swift; sourceTree = "<group>"; };
 		53D7344C2B1A88110025EC21 /* Progress11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress11.swift; sourceTree = "<group>"; };
 		53D7344E2B1A8D5B0025EC21 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		53EA70052B21219800EA574F /* FoodDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDiary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				53D7344A2B1A87F10025EC21 /* Progress10.swift */,
 				53D7344C2B1A88110025EC21 /* Progress11.swift */,
 				53D7344E2B1A8D5B0025EC21 /* HomeScreen.swift */,
+				53EA70052B21219800EA574F /* FoodDiary.swift */,
 				53C186BE2B17BBC000F02128 /* Assets.xcassets */,
 				53C186C02B17BBC000F02128 /* Preview Content */,
 			);
@@ -187,6 +190,7 @@
 				53D734412B1A852F0025EC21 /* Progress5.swift in Sources */,
 				53C186CB2B17D07100F02128 /* LogIn.swift in Sources */,
 				53C186D12B181B7800F02128 /* Progress3.swift in Sources */,
+				53EA70062B21219800EA574F /* FoodDiary.swift in Sources */,
 				53D7344F2B1A8D5B0025EC21 /* HomeScreen.swift in Sources */,
 				53C186CF2B1818F800F02128 /* Progress2.swift in Sources */,
 				53D734472B1A85550025EC21 /* Progress8.swift in Sources */,
