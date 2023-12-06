@@ -221,7 +221,7 @@ struct HomeScreen: View {
         .background(Color(red: 0.15, green: 0.20, blue: 0.18));
       }
 }
-///
+
 
 #Preview {
     HomeScreen()
