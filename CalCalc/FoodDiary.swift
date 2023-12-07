@@ -257,11 +257,13 @@ struct FoodDiary: View {
                 .font(Font.custom("IvyPresto Headline", size: 15).weight(.bold))
                 .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0.90))
                 .offset(x: -62, y: -32)
-              Text("ADD EXERCISE\n")
-                .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
-                .underline()
-                .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-                .offset(x: 5.50, y: 18)
+                NavigationLink(destination: AddExercise()){
+                    Text("ADD EXERCISE\n")
+                        .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
+                        .underline()
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                }
+                .offset(x: -5, y: 18)
             }
             .frame(width: 187, height: 86)
             .offset(x: -88, y: 250.50)

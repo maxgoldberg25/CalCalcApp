@@ -1,5 +1,5 @@
 //
-//  AddFood.swift
+//  AddExercise.swift
 //  CalCalc
 //
 //  Created by Max Goldberg on 12/7/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddFood: View {
+struct AddExercise: View {
     var body: some View {
         ZStack() {
           Group {
@@ -31,7 +31,6 @@ struct AddFood: View {
               HStack(alignment: .top, spacing: 2) {
                 ZStack() {
                   
-                   
                 }
                 .frame(width: 20, height: 16)
                 
@@ -58,12 +57,10 @@ struct AddFood: View {
               .font(Font.custom("IvyPresto Headline", size: 30).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
               .offset(x: -143.50, y: -224)
-              .padding()
-            Text("Search for a food\n")
+            Text("Search for a exercise\n")
               .font(Font.custom("Rounded Mplus 1c Bold", size: 20).weight(.bold))
               .foregroundColor(Color(red: 0.49, green: 0.62, blue: 0.56))
-              .offset(x: -55.50, y: -160)
-     
+              .offset(x: -38.50, y: -160)
             ZStack() {
 
             }
@@ -88,26 +85,50 @@ struct AddFood: View {
               .offset(x: 94.50, y: -72)
           }
             Group {
-            ZStack() {
-                Image(.food)
-                    .resizable()
-            }
-            .frame(width: 56, height: 56)
-            .offset(x: -94.50, y: -87)
-                Image(.barcode)
-                      .resizable()
-                      .frame(width: 90, height: 62)
-            .offset(x: 94.50, y: -87)
-                NavigationLink(destination: AddManualFood()){
-                    Text("Manual Input")
+                NavigationLink(destination: AddCardio()) {
+                    Text("Cardio")
                         .font(Font.custom("IvyPresto Headline", size: 15).weight(.bold))
                         .foregroundColor(Color(red: 0.49, green: 0.62, blue: 0.56))
                 }
-              .offset(x: -95, y: -37)
-            Text("Scan a Barcode")
+              .offset(x: -94.50, y: -37)
+            Rectangle()
+              .foregroundColor(.clear)
+              .frame(width: 178, height: 116)
+              .background(Color(red: 0.20, green: 0.27, blue: 0.24))
+              .cornerRadius(5)
+              .offset(x: -94.50, y: 63)
+            Text("Workout Routines")
+              .font(Font.custom("IvyPresto Headline", size: 15).weight(.bold))
+              .foregroundColor(Color(red: 0.49, green: 0.62, blue: 0.56))
+              .offset(x: -92.50, y: 98)
+            Text("Strength")
               .font(Font.custom("IvyPresto Headline", size: 15).weight(.bold))
               .foregroundColor(Color(red: 0.49, green: 0.62, blue: 0.56))
               .offset(x: 94, y: -37)
+               
+            ZStack() {
+                Image(.cardio)
+                    .resizable()
+            }
+            .frame(width: 56, height: 56)
+            .cornerRadius(25)
+            .offset(x: -94.50, y: -85)
+            ZStack() {
+
+            }
+                Image(.strength)
+                    .resizable()
+            .frame(width: 56, height: 56)
+            .cornerRadius(25)
+            .offset(x: 94.50, y: -83)
+//            ZStack() {
+                Image(.workoutRoutines)
+                    .resizable()
+                .offset(x: 0, y: 0)
+           // }
+                
+            .frame(width: 56, height: 56)
+            .offset(x: -94.50, y: 49)
           }
         }
         .frame(width: 393, height: 852)
@@ -116,5 +137,5 @@ struct AddFood: View {
 }
 
 #Preview {
-    AddFood()
+    AddExercise()
 }
