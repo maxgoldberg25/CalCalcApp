@@ -97,7 +97,7 @@ struct Profile: View {
               .offset(x: -0.50, y: -7.50)
                 NavigationLink(destination: HomeScreen()){
                     Text("Home")
-                        .font(Font.custom("Rounded Mplus 1c Bold", size: 18).weight(.bold))
+                        .font(Font.custom("Arial Rounded MT Bold", size: 18).weight(.bold))
                         .tracking(0.12)
                         .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
                 }
@@ -126,7 +126,7 @@ struct Profile: View {
             Group {
             ZStack() {
               Text("Me")
-                    .font(Font.custom("Rounded Mplus 1c Bold", size: 18).weight(.bold))
+                    .font(Font.custom("Arial Rounded MT Bold", size: 18).weight(.bold))
                     .tracking(0.12)
                     .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
                     .offset(x: 0.50, y: -15)

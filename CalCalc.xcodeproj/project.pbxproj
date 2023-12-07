@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530250652B22560B00254F04 /* AddFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530250642B22560B00254F04 /* AddFood.swift */; };
 		538113662B22307300AC5F4B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538113652B22307300AC5F4B /* Profile.swift */; };
 		53C186BB2B17BBBD00F02128 /* CalCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C186BA2B17BBBD00F02128 /* CalCalcApp.swift */; };
 		53C186BD2B17BBBD00F02128 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C186BC2B17BBBD00F02128 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530250642B22560B00254F04 /* AddFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFood.swift; sourceTree = "<group>"; };
 		538113652B22307300AC5F4B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		53C186B72B17BBBD00F02128 /* CalCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C186BA2B17BBBD00F02128 /* CalCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCalcApp.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				53D7344C2B1A88110025EC21 /* Progress11.swift */,
 				53D7344E2B1A8D5B0025EC21 /* HomeScreen.swift */,
 				53EA70052B21219800EA574F /* FoodDiary.swift */,
+				530250642B22560B00254F04 /* AddFood.swift */,
 				538113652B22307300AC5F4B /* Profile.swift */,
 				53C186BE2B17BBC000F02128 /* Assets.xcassets */,
 				53C186C02B17BBC000F02128 /* Preview Content */,
@@ -195,6 +198,7 @@
 				53C186CB2B17D07100F02128 /* LogIn.swift in Sources */,
 				53C186D12B181B7800F02128 /* Progress3.swift in Sources */,
 				53EA70062B21219800EA574F /* FoodDiary.swift in Sources */,
+				530250652B22560B00254F04 /* AddFood.swift in Sources */,
 				53D7344F2B1A8D5B0025EC21 /* HomeScreen.swift in Sources */,
 				53C186CF2B1818F800F02128 /* Progress2.swift in Sources */,
 				53D734472B1A85550025EC21 /* Progress8.swift in Sources */,

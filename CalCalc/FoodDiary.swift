@@ -96,7 +96,7 @@ struct FoodDiary: View {
               .offset(x: -0.50, y: -7.50)
                 NavigationLink(destination: HomeScreen()){
                     Text("Home")
-                        .font(Font.custom("Rounded Mplus 1c Bold", size: 18).weight(.bold))
+                        .font(Font.custom("Arial Rounded MT Bold", size: 18).weight(.bold))
                         .tracking(0.12)
                         .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
                 }
@@ -124,7 +124,7 @@ struct FoodDiary: View {
               ZStack() {
                   NavigationLink(destination: Profile()){
                       Text("Me")
-                          .font(Font.custom("Rounded Mplus 1c Bold", size: 18).weight(.bold))
+                          .font(Font.custom("Arial Rounded MT Bold", size: 18).weight(.bold))
                           .tracking(0.12)
                           .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
                   }
@@ -217,25 +217,34 @@ struct FoodDiary: View {
               .font(Font.custom("IvyPresto Headline", size: 15).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0.90))
               .offset(x: 39, y: 97.50)
-            Text("ADD FOOD\n")
-              .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
-              .underline()
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                
+                NavigationLink(destination: AddFood()){
+                    Text("ADD FOOD\n")
+                        .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
+                        .underline()
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                }
               .offset(x: -84.50, y: 34.50)
-            Text("ADD FOOD\n")
-              .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
-              .underline()
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                NavigationLink(destination: AddFood()){
+                    Text("ADD FOOD\n")
+                        .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
+                        .underline()
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                }
               .offset(x: 106.50, y: 34.50)
-            Text("ADD FOOD\n")
-              .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
-              .underline()
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                NavigationLink(destination: AddFood()){
+                    Text("ADD FOOD\n")
+                        .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
+                        .underline()
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                }
               .offset(x: 106.50, y: 145.50)
-            Text("ADD FOOD\n")
-              .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
-              .underline()
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                NavigationLink(destination: AddFood()){
+                    Text("ADD FOOD\n")
+                        .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
+                        .underline()
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                }
               .offset(x: -84.50, y: 145.50)
             ZStack() {
               Rectangle()

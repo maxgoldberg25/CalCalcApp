@@ -12,9 +12,12 @@ struct Progress11: View {
       
       ScrollView{
           VStack {
+              
               ZStack() {
+                  
                   Group {
                       VStack(alignment: .leading, spacing: 15) {
+                          
                           Text("Congratulations!\n")
                               .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
                               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
@@ -26,6 +29,7 @@ struct Progress11: View {
                               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
                       }
                       .offset(x: 0.50, y: -192)
+                      .padding()
                       Text("send me daily target reminders\n")
                           .font(Font.custom("IvyPresto Headline", size: 13))
                           .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
@@ -47,7 +51,7 @@ struct Progress11: View {
                               .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
                               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
                               .offset(x: 76.50, y: 5.50)
-                          Text("1,980 \n")
+                          Text("1,980")
                               .font(Font.custom("IvyPresto Headline", size: 50).weight(.bold))
                               .foregroundColor(Color(red: 0.51, green: 1, blue: 0.75))
                               .offset(x: -50.50, y: 0)
@@ -74,6 +78,7 @@ struct Progress11: View {
                       }
 //                      .frame(width: 335, height: 53)
 //                      .offset(x: 3, y: 397)
+                      
                       Rectangle()
                           .foregroundColor(.clear)
                           .frame(width: 59, height: 0)
@@ -100,6 +105,7 @@ struct Progress11: View {
                           .offset(x: 0, y: -332.50)
                   }
                   Group {
+                      
                       Rectangle()
                           .foregroundColor(.clear)
                           .frame(width: 59, height: 0)
@@ -139,14 +145,19 @@ struct Progress11: View {
                       }
                       .frame(width: 42, height: 42)
                       .offset(x: -143.50, y: 152.50)
+                      Image(.logoLight)
+                          .resizable()
+                          .frame(width: 90, height: 62)
+                          .offset(x: -1, y: -662)
                       Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 393, height: 510)
                         .background(Color(red: 0.20, green: 0.27, blue: 0.23))
-                        .offset(x: -1, y: -642) // Height of top rectangle
+                        .offset(x: -1, y: -662) // Height of top rectangle
                         .shadow(
                           color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
                         )
+                      
                       
                       Rectangle()
                         .foregroundColor(.clear)
@@ -181,13 +192,14 @@ struct Progress11: View {
                       }
                       .frame(width: 350, height: 36)
                       .background(Color(red: 0.20, green: 0.27, blue: 0.24))
-                      .offset(x: 0.50, y: -434.50)
+                      .offset(x: 0.50, y: -464.50)
                   }
               }
               .frame(width: 393, height: 941)
               .background(Color(red: 0.15, green: 0.20, blue: 0.18))
           }
       }
+      .navigationBarBackButtonHidden(true) // DELETE
   }
 }
 
