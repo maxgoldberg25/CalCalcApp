@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    init(){ // disables effect
+            UINavigationBar.setAnimationsEnabled(false)
+        }
+    
     var body: some View {
         ZStack() {
           Group {
@@ -216,12 +220,14 @@ struct HomeScreen: View {
             .frame(width: 33, height: 33)
             .offset(x: 159, y: -273.50)
           }
+            .navigationBarBackButtonHidden(true) // DELETE
         }
         .frame(width: 393, height: 852)
         .background(Color(red: 0.15, green: 0.20, blue: 0.18));
       }
 }
 
+// Delete the slide animation when clicking on the tabs
 
 #Preview {
     HomeScreen()

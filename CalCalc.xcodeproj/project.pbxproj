@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		538113662B22307300AC5F4B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538113652B22307300AC5F4B /* Profile.swift */; };
 		53C186BB2B17BBBD00F02128 /* CalCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C186BA2B17BBBD00F02128 /* CalCalcApp.swift */; };
 		53C186BD2B17BBBD00F02128 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C186BC2B17BBBD00F02128 /* ContentView.swift */; };
 		53C186BF2B17BBC000F02128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C186BE2B17BBC000F02128 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		538113652B22307300AC5F4B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		53C186B72B17BBBD00F02128 /* CalCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C186BA2B17BBBD00F02128 /* CalCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCalcApp.swift; sourceTree = "<group>"; };
 		53C186BC2B17BBBD00F02128 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				53D7344C2B1A88110025EC21 /* Progress11.swift */,
 				53D7344E2B1A8D5B0025EC21 /* HomeScreen.swift */,
 				53EA70052B21219800EA574F /* FoodDiary.swift */,
+				538113652B22307300AC5F4B /* Profile.swift */,
 				53C186BE2B17BBC000F02128 /* Assets.xcassets */,
 				53C186C02B17BBC000F02128 /* Preview Content */,
 			);
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538113662B22307300AC5F4B /* Profile.swift in Sources */,
 				53C186CD2B17DF6300F02128 /* Progress1.swift in Sources */,
 				53D7344B2B1A87F10025EC21 /* Progress10.swift in Sources */,
 				53C186BD2B17BBBD00F02128 /* ContentView.swift in Sources */,
