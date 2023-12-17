@@ -50,10 +50,15 @@ struct Progress2: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("Lack of Progress")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: 0, y: 0)
+            Button{
+                
+            } label: {
+                Text("Lack of Progress")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: 0, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
         ZStack() {
@@ -71,10 +76,15 @@ struct Progress2: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("Difficulty Tracking Calories")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: -2.50, y: 0)
+            Button{
+                
+            } label: {
+                Text("Difficulty Tracking Calories")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: -2.50, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
         ZStack() {
@@ -92,10 +102,15 @@ struct Progress2: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("Difficulty Finding Good Food ")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: -3, y: 0)
+            Button{
+                
+            } label: {
+                Text("Difficulty Finding Good Food ")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: -3, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
         ZStack() {
@@ -113,10 +128,15 @@ struct Progress2: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("Hard Physical Regimen")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: -2.50, y: 0)
+            Button{
+                
+            } label: {
+                Text("Hard Physical Regimen")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: -2.50, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
         ZStack() {
@@ -134,10 +154,15 @@ struct Progress2: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("Busy Schedule")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: -2.50, y: 0)
+            Button{
+                
+            } label: {
+                Text("Busy Schedule")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: -2.50, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
       }

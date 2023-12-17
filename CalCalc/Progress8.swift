@@ -100,14 +100,26 @@ struct Progress8: View {
               .stroke(Color(red: 0.85, green: 0.85, blue: 0.85), lineWidth: 3)
           )
           .offset(x: 0, y: -288)
-        Rectangle()
-          .foregroundColor(.clear)
-          .frame(width: 59, height: 0)
-          .overlay(
-            Rectangle()
-              .stroke(Color(red: 0.20, green: 0.27, blue: 0.24), lineWidth: 3)
-          )
-          .offset(x: 66, y: -288)
+          // Weight symbol at top
+          ZStack {
+
+          
+          Rectangle()
+            .foregroundColor(.clear)
+            .frame(width: 393, height: 510)
+            .background(Color(red: 0.20, green: 0.27, blue: 0.23))
+            .offset(x: -1, y: -572) // Height of top rectangle
+            .shadow(
+              color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
+            )
+              ZStack() {
+                Image(.logoLight)
+                      .resizable()
+                      .frame(width: 90, height: 62)
+              }
+              .frame(width: 52, height: 12)
+          .offset(x: 0.50, y: -358)
+          }
       }
         Group {
         Rectangle()
@@ -134,10 +146,15 @@ struct Progress8: View {
               .shadow(
                 color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
               )
-            Text("Lose 1/2 lbs per week")
-              .font(Font.custom("Arial", size: 20))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: 0, y: 0)
+              Button{
+                  
+              } label: {
+                  Text("Lose 1/2 lbs per week")
+                    .font(Font.custom("Arial", size: 20))
+                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                    .offset(x: 0, y: 0)
+              }
+            
           }
           .frame(width: 335, height: 53)
           ZStack() {
@@ -155,10 +172,15 @@ struct Progress8: View {
               .shadow(
                 color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
               )
-            Text("Lose 1 lb per week")
-              .font(Font.custom("Arial", size: 20))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: 0, y: 0)
+              Button{
+                  
+              } label: {
+                  Text("Lose 1 lb per week")
+                    .font(Font.custom("Arial", size: 20))
+                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                    .offset(x: 0, y: 0)
+              }
+            
           }
           .frame(width: 335, height: 53)
           ZStack() {
@@ -176,10 +198,15 @@ struct Progress8: View {
               .shadow(
                 color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
               )
-            Text("Lose 1.5 lbs per week")
-              .font(Font.custom("Arial", size: 20))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: 0, y: 0)
+              Button{
+                  
+              } label: {
+                  Text("Lose 1.5 lbs per week")
+                    .font(Font.custom("Arial", size: 20))
+                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                    .offset(x: 0, y: 0)
+              }
+            
           }
           .frame(width: 335, height: 53)
           ZStack() {
@@ -197,10 +224,15 @@ struct Progress8: View {
               .shadow(
                 color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
               )
-            Text("Lose 2 lbs per week")
-              .font(Font.custom("Arial", size: 20))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: 0, y: 0)
+              Button{
+                  
+              } label: {
+                  Text("Lose 2 lbs per week")
+                    .font(Font.custom("Arial", size: 20))
+                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                    .offset(x: 0, y: 0)
+              }
+            
           }
           .frame(width: 335, height: 53)
         }

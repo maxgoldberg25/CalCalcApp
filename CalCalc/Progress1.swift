@@ -78,10 +78,18 @@ struct Progress1: View {
                     .shadow(
                         color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
                     )
-                Text("Lose Weight")
-                    .font(Font.custom("Arial", size: 20))
-                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-                    .offset(x: 0, y: 0)
+                Button{
+                   // FIXME add lose weight toggle
+                    
+                }label: {
+                    Text("Lose Weight")
+                        .font(Font.custom("Arial", size: 20))
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                        .offset(x: 0, y: 0)
+                    
+                }
+               
+                
             }
             .frame(width: 335, height: 53)
             ZStack() {
@@ -99,10 +107,15 @@ struct Progress1: View {
                     .shadow(
                         color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
                     )
-                Text("Maintain Weight")
-                    .font(Font.custom("Arial", size: 20))
-                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-                    .offset(x: 0.50, y: 0)
+                Button{
+                    //add
+                } label: {
+                    Text("Maintain Weight")
+                        .font(Font.custom("Arial", size: 20))
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                        .offset(x: 0.50, y: 0)
+                }
+                
             }
             .frame(width: 335, height: 53)
             ZStack() {
@@ -120,10 +133,15 @@ struct Progress1: View {
                     .shadow(
                         color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
                     )
-                Text("Gain Weight")
-                    .font(Font.custom("Arial", size: 20))
-                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-                    .offset(x: 0.50, y: 0)
+                Button{
+                    //add
+                } label: {
+                    Text("Gain Weight")
+                        .font(Font.custom("Arial", size: 20))
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                        .offset(x: 0.50, y: 0)
+                }
+                
             }
             .frame(width: 335, height: 53)
             ZStack {
@@ -140,10 +158,14 @@ struct Progress1: View {
                     .shadow(
                         color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
                     )
+                Button{
+                    
+                } label: {
+                    Text("Gain Muscle")
+                        .font(Font.custom("Arial", size: 20))
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                }
             
-            Text("Gain Muscle")
-                .font(Font.custom("Arial", size: 20))
-                .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
         }
         ZStack() {
           Rectangle()
@@ -160,10 +182,15 @@ struct Progress1: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("Increase Physical Activity")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: 0, y: 0)
+            Button{
+                //add
+            } label: {
+                Text("Increase Physical Activity")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: 0, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
       }

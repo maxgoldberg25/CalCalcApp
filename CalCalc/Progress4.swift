@@ -10,14 +10,34 @@ import SwiftUI
 struct Progress4: View {
   var body: some View {
     ZStack() {
-      Rectangle()
-        .foregroundColor(.clear)
-        .frame(width: 393, height: 110)
-        .background(Color(red: 0.20, green: 0.27, blue: 0.23))
-        .offset(x: -1, y: -371)
-        .shadow(
-          color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
-        )
+        
+//      Rectangle()
+//        .foregroundColor(.clear)
+//        .frame(width: 393, height: 110)
+//        .background(Color(red: 0.20, green: 0.27, blue: 0.23))
+//        .offset(x: -1, y: -371)
+//        .shadow(
+//          color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
+//        )
+        ZStack {
+
+        
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 393, height: 510)
+          .background(Color(red: 0.20, green: 0.27, blue: 0.23))
+          .offset(x: -1, y: -572) // Height of top rectangle
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
+          )
+            ZStack() {
+              Image(.logoLight)
+                    .resizable()
+                    .frame(width: 90, height: 62)
+            }
+            .frame(width: 52, height: 12)
+        .offset(x: 0.50, y: -358)
+        }
       ZStack() {
 
       }
@@ -90,10 +110,15 @@ struct Progress4: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("Less than 1,000")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: 0, y: 0)
+            Button{
+                
+            } label: {
+                Text("Less than 1,000")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: 0, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
         ZStack() {
@@ -111,10 +136,15 @@ struct Progress4: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("1,000 to 3,000")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: 0, y: 0)
+            Button{
+                
+            } label: {
+                Text("1,000 to 3,000")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: 0, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
         ZStack() {
@@ -132,10 +162,15 @@ struct Progress4: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("3,000 to 5,000")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: 0, y: 0)
+            Button{
+                
+            } label: {
+                Text("3,000 to 5,000")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: 0, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
         ZStack() {
@@ -153,10 +188,15 @@ struct Progress4: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("More than 5,000")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: 0.50, y: 0)
+            Button{
+                
+            } label: {
+                Text("More than 5,000")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: 0.50, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
         ZStack() {
@@ -174,55 +214,46 @@ struct Progress4: View {
             .shadow(
               color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
             )
-          Text("I’m Not Sure")
-            .font(Font.custom("Arial", size: 20))
-            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-            .offset(x: 0.50, y: 0)
+            Button{
+                
+            } label: {
+                Text("I’m Not Sure")
+                  .font(Font.custom("Arial", size: 20))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  .offset(x: 0.50, y: 0)
+            }
+          
         }
         .frame(width: 335, height: 53)
       }
       .offset(x: 3, y: -21.50)
       ZStack() {
-        Rectangle()
-          .foregroundColor(.clear)
-          .frame(width: 59, height: 0)
-          .overlay(
-            Rectangle()
-              .stroke(Color(red: 0.85, green: 0.85, blue: 0.85), lineWidth: 3)
-          )
-          .offset(x: -132, y: 0.12)
-        Rectangle()
-          .foregroundColor(.clear)
-          .frame(width: 59, height: 0)
-          .overlay(
-            Rectangle()
-              .stroke(Color(red: 0.20, green: 0.27, blue: 0.24), lineWidth: 3)
-          )
-          .offset(x: -66, y: -0.12)
-        Rectangle()
-          .foregroundColor(.clear)
-          .frame(width: 59, height: 0)
-          .overlay(
-            Rectangle()
-              .stroke(Color(red: 0.20, green: 0.27, blue: 0.24), lineWidth: 3)
-          )
-          .offset(x: 0, y: -0.12)
-        Rectangle()
-          .foregroundColor(.clear)
-          .frame(width: 59, height: 0)
-          .overlay(
-            Rectangle()
-              .stroke(Color(red: 0.20, green: 0.27, blue: 0.24), lineWidth: 3)
-          )
-          .offset(x: 66, y: -0.12)
-        Rectangle()
-          .foregroundColor(.clear)
-          .frame(width: 59, height: 0)
-          .overlay(
-            Rectangle()
-              .stroke(Color(red: 0.20, green: 0.27, blue: 0.24), lineWidth: 3)
-          )
-          .offset(x: 132, y: -0.12)
+//        Rectangle()
+//          .foregroundColor(.clear)
+//          .frame(width: 59, height: 0)
+//          .overlay(
+//            Rectangle()
+//              .stroke(Color(red: 0.85, green: 0.85, blue: 0.85), lineWidth: 3)
+//          )
+//          .offset(x: -132, y: 0.12)
+          // Weight symbol at top
+
+//        Rectangle()
+//          .foregroundColor(.clear)
+//          .frame(width: 59, height: 0)
+//          .overlay(
+//            Rectangle()
+//              .stroke(Color(red: 0.20, green: 0.27, blue: 0.24), lineWidth: 3)
+//          )
+//          .offset(x: 66, y: -0.12)
+//        Rectangle()
+//          .foregroundColor(.clear)
+//          .frame(width: 59, height: 0)
+//          .overlay(
+//            Rectangle()
+//              .stroke(Color(red: 0.20, green: 0.27, blue: 0.24), lineWidth: 3)
+//          )
+//          .offset(x: 132, y: -0.12)
       }
       .frame(width: 323, height: 0.25)
       .offset(x: 0, y: -287.88)

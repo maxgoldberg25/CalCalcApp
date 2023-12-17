@@ -89,14 +89,19 @@ struct Progress5: View {
               .shadow(
                 color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
               )
-            Text("Not Super Active")
-              .font(Font.custom("Arial", size: 17))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -95, y: -8.50)
-            Text("Most of your day is spent sitting down")
-              .font(Font.custom("Arial", size: 11))
-              .foregroundColor(Color(red: 0.62, green: 0.62, blue: 0.62))
-              .offset(x: 1.50, y: 12)
+              Button{
+                  
+              } label: {
+                  Text("Not Super Active")
+                    .font(Font.custom("Arial", size: 17))
+                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                    .offset(x: 0, y: -8.50)
+                  Text("Most of your day is spent sitting down")
+                    .font(Font.custom("Arial", size: 11))
+                    .foregroundColor(Color(red: 0.62, green: 0.62, blue: 0.62))
+                    .offset(x: 1.50, y: 12)
+              }
+            
           }
           .frame(width: 335, height: 53)
           ZStack() {
@@ -114,14 +119,20 @@ struct Progress5: View {
               .shadow(
                 color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
               )
-            Text("Your on your feet for most of the day")
-              .font(Font.custom("Arial", size: 11))
-              .foregroundColor(Color(red: 0.62, green: 0.62, blue: 0.62))
-              .offset(x: 1.50, y: 10)
-            Text("Somewhat Active")
-              .font(Font.custom("Arial", size: 17))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -93, y: -13.50)
+              Button{
+                  
+              } label: {
+                  Text("Somewhat Active")
+                    .font(Font.custom("Arial", size: 17))
+                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                    .offset(x: 0, y: -13.50)
+                  Text("Your on your feet for most of the day")
+                    .font(Font.custom("Arial", size: 11))
+                    .foregroundColor(Color(red: 0.62, green: 0.62, blue: 0.62))
+                    .offset(x: 1.50, y: 10)
+                  
+              }
+            
           }
           .frame(width: 335, height: 53)
           ZStack() {
@@ -139,14 +150,19 @@ struct Progress5: View {
               .shadow(
                 color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
               )
-            Text("Active")
-              .font(Font.custom("Arial", size: 17))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -135, y: -12.50)
-            Text("On top of being on your feet all day you do some physical activity")
-              .font(Font.custom("Arial", size: 11))
-              .foregroundColor(Color(red: 0.62, green: 0.62, blue: 0.62))
-              .offset(x: -8, y: 10.50)
+              Button{
+                  
+              } label: {
+                  Text("Active")
+                    .font(Font.custom("Arial", size: 17))
+                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                    .offset(x: 0, y: -12.50)
+                  Text("On top of being on your feet all day you do some physical activity")
+                    .font(Font.custom("Arial", size: 11))
+                    .foregroundColor(Color(red: 0.62, green: 0.62, blue: 0.62))
+                    .offset(x: -8, y: 10.50)
+              }
+            
           }
           .frame(width: 335, height: 53)
           ZStack() {
@@ -164,14 +180,19 @@ struct Progress5: View {
               .shadow(
                 color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
               )
-            Text("Super Active")
-              .font(Font.custom("Arial", size: 17))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -110.50, y: -12.50)
-            Text("Most of the day you are doing heavy physical activity")
-              .font(Font.custom("Arial", size: 11))
-              .foregroundColor(Color(red: 0.62, green: 0.62, blue: 0.62))
-              .offset(x: -8, y: 11)
+              Button{
+                  
+              } label: {
+                  Text("Super Active")
+                    .font(Font.custom("Arial", size: 17))
+                    .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                    .offset(x: 0, y: -12.50)
+                  Text("Most of the day you are doing heavy physical activity")
+                    .font(Font.custom("Arial", size: 11))
+                    .foregroundColor(Color(red: 0.62, green: 0.62, blue: 0.62))
+                    .offset(x: -8, y: 11)
+              }
+            
           }
           .frame(width: 335, height: 53)
         }
@@ -192,14 +213,26 @@ struct Progress5: View {
               .stroke(Color(red: 0.85, green: 0.85, blue: 0.85), lineWidth: 3)
           )
           .offset(x: -66, y: -288)
-        Rectangle()
-          .foregroundColor(.clear)
-          .frame(width: 59, height: 0)
-          .overlay(
-            Rectangle()
-              .stroke(Color(red: 0.20, green: 0.27, blue: 0.24), lineWidth: 3)
-          )
-          .offset(x: 0, y: -288)
+          // Weight symbol at top
+          ZStack {
+
+          
+          Rectangle()
+            .foregroundColor(.clear)
+            .frame(width: 393, height: 510)
+            .background(Color(red: 0.20, green: 0.27, blue: 0.23))
+            .offset(x: -1, y: -572) // Height of top rectangle
+            .shadow(
+              color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
+            )
+              ZStack() {
+                Image(.logoLight)
+                      .resizable()
+                      .frame(width: 90, height: 62)
+              }
+              .frame(width: 52, height: 12)
+          .offset(x: 0.50, y: -358)
+          }
       }
         Group {
         Rectangle()

@@ -10,11 +10,11 @@ import SwiftUI
 struct Progress11: View {
   var body: some View {
       
-      ScrollView{
+   //   ScrollView{
           VStack {
               
               ZStack() {
-                  
+
                   Group {
                       VStack(alignment: .leading, spacing: 15) {
                           
@@ -145,19 +145,26 @@ struct Progress11: View {
                       }
                       .frame(width: 42, height: 42)
                       .offset(x: -143.50, y: 152.50)
-                      Image(.logoLight)
-                          .resizable()
-                          .frame(width: 90, height: 62)
-                          .offset(x: -1, y: -662)
+                      // Weight symbol at top
+                      ZStack {
+
+                      
                       Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 393, height: 510)
                         .background(Color(red: 0.20, green: 0.27, blue: 0.23))
-                        .offset(x: -1, y: -662) // Height of top rectangle
+                        .offset(x: -1, y: -582) // Height of top rectangle
                         .shadow(
                           color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
                         )
-                      
+                          ZStack() {
+                            Image(.logoLight)
+                                  .resizable()
+                                  .frame(width: 90, height: 62)
+                          }
+                          .frame(width: 52, height: 12)
+                      .offset(x: 0.50, y: -358)
+                      }
                       
                       Rectangle()
                         .foregroundColor(.clear)
@@ -198,7 +205,7 @@ struct Progress11: View {
               .frame(width: 393, height: 941)
               .background(Color(red: 0.15, green: 0.20, blue: 0.18))
           }
-      }
+ //     }
       .navigationBarBackButtonHidden(true) // DELETE
   }
 }
