@@ -118,16 +118,28 @@ struct Progress6: View {
           .shadow(
             color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
           )
-        Text("Female")
-          .font(Font.custom("Arial", size: 17))
-          .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+          Button{
+              
+          } label: {
+              Text("Female")
+                .font(Font.custom("Arial", size: 17))
+                .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+
+          }
           .offset(x: -82, y: -108)
+        
       }
         Group {
-        Text("Male")
-          .font(Font.custom("Arial", size: 17))
-          .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-          .offset(x: 88, y: -108)
+            Button{
+                
+            } label: {
+                Text("Male")
+                  .font(Font.custom("Arial", size: 17))
+                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  
+            }
+            .offset(x: 88, y: -108)
+        
         ZStack() {
           Rectangle()
             .foregroundColor(.clear)

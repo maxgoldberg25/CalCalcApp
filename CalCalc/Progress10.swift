@@ -39,11 +39,12 @@ struct Progress10: View {
                       TextField("Enter username", text: $username)
                           .textFieldStyle(RoundedBorderTextFieldStyle()) // Add a rounded border for better visibility
                           .padding(.horizontal) // Add some horizontal padding
-                          .frame(height: 44) // Set a fixed height for the TextField
+                          .frame(height: 50) // Set a fixed height for the TextField
                           .font(.system(size: 24, weight: .bold)) // Set the font for the TextField
                           .background(Color(red: 0.85098, green: 0.85098, blue: 0.85098)) // Set the background color
-                          .foregroundColor(Color.black) // Set the text color
+                          .foregroundColor(Color.black)
                           .offset(x: 70, y: -10.50)
+                          .colorScheme(.light)
                   }
                   .frame(minWidth: 0, maxWidth: .infinity) // Allow the HStack to expand to the maximum width available
                   .padding() // Add some padding around the HStack
@@ -52,14 +53,17 @@ struct Progress10: View {
                   
                   HStack { // Password
                       Text("Password")
-                      SecureField("", text: $password)
+                      TextField("", text: $password)
                           .background(Color.init(red: 0.85098, green: 0.85098, blue: 0.85098))
                           .font(Font.custom("Arial", size: 24).weight(.bold))
                           .frame(minWidth: 300,  maxWidth: 900, minHeight: 44)
                           .lineSpacing(20)
-                          .foregroundColor(Color(red: 0, green: 0, blue: 0))
+                          .foregroundColor(Color.black)
                           .offset(x: 40, y: 68.50)
+                          .colorScheme(.light)
                   }
+                  
+                  
                       HStack { // NONE OF THIS MATTERS FROM HERE
                           Text("")
                               .font(.system(size: 24)) // Ensure the text size is appropriate
@@ -67,11 +71,12 @@ struct Progress10: View {
                           SecureField("Enter password", text: $password)
                               .textFieldStyle(RoundedBorderTextFieldStyle()) // Add a rounded border for better visibility
                               .padding(.horizontal) // Add some horizontal padding
-                              .frame(height: 44) // Set a fixed height for the TextField
+                              .frame(height: 50) // Set a fixed height for the TextField
                               .font(.system(size: 24, weight: .bold)) // Set the font for the TextField
                               .background(Color(red: 0.85098, green: 0.85098, blue: 0.85098)) // Set the background color
-                              .foregroundColor(Color.black) // Set the text color
-                              .offset(x: 70, y: 70.50)
+                              .foregroundColor(Color.black)
+                              .offset(x: 70, y: 69.50)
+                              .colorScheme(.light)
                       }
                       .frame(minWidth: 0, maxWidth: .infinity) // Allow the HStack to expand to the maximum width available
                       .padding() // Add some padding around the HStack

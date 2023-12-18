@@ -110,10 +110,12 @@ struct HomeScreen: View {
             .frame(height: 49)
             .offset(x: -0.50, y: 385.50)
             ZStack() {
-              Text("Me")
-                .font(Font.custom("Arial Rounded MT Bold", size: 18).weight(.bold))
-                .tracking(0.12)
-                .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                NavigationLink(destination: Profile()){
+                    Text("Me")
+                        .font(Font.custom("Arial Rounded MT Bold", size: 18).weight(.bold))
+                        .tracking(0.12)
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                }
                 .offset(x: 0.50, y: -3)
               ZStack() {
 

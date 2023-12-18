@@ -31,11 +31,7 @@ struct Profile: View {
             .frame(width: 52, height: 12)
             .offset(x: 0.50, y: -360.50)
             ZStack() {
-              Text("9:41 AM")
-                .font(Font.custom("Inter", size: 12).weight(.ultraLight))
-                .lineSpacing(16)
-                .foregroundColor(Color(red: 0.98, green: 0.98, blue: 0.98))
-                .offset(x: -1, y: 1)
+             
               HStack(alignment: .top, spacing: 2) {
                 ZStack() {
                   
