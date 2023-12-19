@@ -21,6 +21,7 @@
 		53C186CF2B1818F800F02128 /* Progress2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C186CE2B1818F800F02128 /* Progress2.swift */; };
 		53C186D12B181B7800F02128 /* Progress3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C186D02B181B7800F02128 /* Progress3.swift */; };
 		53C186D32B181F6300F02128 /* Progress4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C186D22B181F6300F02128 /* Progress4.swift */; };
+		53C4ADD92B317C3400B3C538 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4ADD82B317C3400B3C538 /* Privacy.swift */; };
 		53D734412B1A852F0025EC21 /* Progress5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D734402B1A852F0025EC21 /* Progress5.swift */; };
 		53D734432B1A853F0025EC21 /* Progress6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D734422B1A853F0025EC21 /* Progress6.swift */; };
 		53D734452B1A85480025EC21 /* Progress7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D734442B1A85480025EC21 /* Progress7.swift */; };
@@ -48,6 +49,7 @@
 		53C186CE2B1818F800F02128 /* Progress2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress2.swift; sourceTree = "<group>"; };
 		53C186D02B181B7800F02128 /* Progress3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress3.swift; sourceTree = "<group>"; };
 		53C186D22B181F6300F02128 /* Progress4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress4.swift; sourceTree = "<group>"; };
+		53C4ADD82B317C3400B3C538 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		53D734402B1A852F0025EC21 /* Progress5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress5.swift; sourceTree = "<group>"; };
 		53D734422B1A853F0025EC21 /* Progress6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress6.swift; sourceTree = "<group>"; };
 		53D734442B1A85480025EC21 /* Progress7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress7.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				53074C372B226B5700F7B8CE /* AddManualFood.swift */,
 				53074C352B2267D200F7B8CE /* AddCardio.swift */,
 				538113652B22307300AC5F4B /* Profile.swift */,
+				53C4ADD82B317C3400B3C538 /* Privacy.swift */,
 				53C186BE2B17BBC000F02128 /* Assets.xcassets */,
 				53C186C02B17BBC000F02128 /* Preview Content */,
 			);
@@ -212,6 +215,7 @@
 				53C186BB2B17BBBD00F02128 /* CalCalcApp.swift in Sources */,
 				53074C382B226B5700F7B8CE /* AddManualFood.swift in Sources */,
 				53D734492B1A87E10025EC21 /* Progress9.swift in Sources */,
+				53C4ADD92B317C3400B3C538 /* Privacy.swift in Sources */,
 				53D7344D2B1A88110025EC21 /* Progress11.swift in Sources */,
 				53C186D32B181F6300F02128 /* Progress4.swift in Sources */,
 				53D734412B1A852F0025EC21 /* Progress5.swift in Sources */,

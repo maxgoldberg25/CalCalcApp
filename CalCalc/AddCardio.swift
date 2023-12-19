@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct AddCardio: View {
+    
+    @AppStorage("minutesCompleted") var minutesCompleted = ""
+    @AppStorage("calBurned") var calBurned = ""
+    
     var body: some View {
         ZStack() {
           Group {
@@ -73,34 +77,39 @@ struct AddCardio: View {
             Text("Minutes Completed")
               .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -85, y: -181)
+              .offset(x: -85, y: -168)
               .padding()
             Text("Calories Burned")
               .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -87.50, y: -136)
-            Rectangle()
-              .foregroundColor(.clear)
-              .frame(width: 107, height: 34)
-              .background(Color(red: 0.13, green: 0.17, blue: 0.15))
-              .cornerRadius(5)
-              .offset(x: 121, y: -177)
+              .offset(x: -87.50, y: -106)
+
           }
             Group {
-            Rectangle()
-              .foregroundColor(.clear)
-              .frame(width: 107, height: 34)
-              .background(Color(red: 0.13, green: 0.17, blue: 0.15))
-              .cornerRadius(5)
-              .offset(x: 121, y: -136)
-            Text("20 ")
-              .font(Font.custom("IvyPresto Headline", size: 12).weight(.bold))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: 146.50, y: -177)
-            Text("387")
-              .font(Font.custom("IvyPresto Headline", size: 12).weight(.bold))
-              .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: 146, y: -136)
+
+                TextField("", text: $minutesCompleted)
+                    .textFieldStyle(RoundedBorderTextFieldStyle()) // Add a rounded border for better visibility
+                    // .padding(.horizontal) // Add some horizontal padding if needed on both sides
+                    .frame(width: 80) // Set a fixed width for the TextField
+                    .font(.system(size: 16, weight: .bold)) // Set the font for the TextField
+                    .background(Color(red: 0.85098, green: 0.85098, blue: 0.85098)) // Set the background color
+                    .foregroundColor(Color.black)
+                    .offset(x: 130, y: -171)
+                    .colorScheme(.light)
+                    .padding(.trailing, 20) // Add padding to the right side of the TextField
+            
+                TextField("", text: $calBurned)
+                    .textFieldStyle(RoundedBorderTextFieldStyle()) // Add a rounded border for better visibility
+                    // .padding(.horizontal) // Add some horizontal padding if needed on both sides
+                    .frame(width: 80) // Set a fixed width for the TextField
+                    .font(.system(size: 16, weight: .bold)) // Set the font for the TextField
+                    .background(Color(red: 0.85098, green: 0.85098, blue: 0.85098)) // Set the background color
+                    .foregroundColor(Color.black)
+                    .offset(x: 130, y: -110.50)
+                    .colorScheme(.light)
+                    .padding(.trailing, 20) // Add padding to the right side of the TextField
+                
+                
                 NavigationLink(destination: FoodDiary()) {
                                     Text("Done")
                                         .frame(width: 100, height: 40)

@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct AddManualFood: View {
+    
+    @AppStorage("foodItem") var foodItem = ""
+    @AppStorage("servingSize") var servingSize = ""
+    @AppStorage("NServings") var NServings = ""
+    @AppStorage("Meal") var Meal = ""
+    @AppStorage("nutritionFacts") var nutritionFacts = ""
+    
+    
+    
     var body: some View {
         ZStack() {
           Group {
@@ -53,10 +62,11 @@ struct AddManualFood: View {
             .frame(width: 350, height: 36)
             .background(Color(red: 0.20, green: 0.27, blue: 0.24))
             .offset(x: 0.50, y: -390)
-            Text("Banana")
-              .font(Font.custom("IvyPresto Headline", size: 30).weight(.bold))
+            Text("Food Item")
+              .font(Font.custom("IvyPresto Headline", size: 24).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -124, y: -218)
+              .offset(x: -90, y: -208)
+              .padding()
             ZStack() {
 
             }
@@ -70,57 +80,97 @@ struct AddManualFood: View {
             Text("Serving Size")
               .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -86.50, y: -177)
+              .offset(x: -86.50, y: -137)
             Text("Number of Servings")
               .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -87.50, y: -132)
+              .offset(x: -87.50, y: -92)
             Text("Meal")
               .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -88.50, y: -87)
+              .offset(x: -88.50, y: -47)
           }
             Group {
             Text("Nutrition Facts")
               .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: -88.50, y: -42)
+              .offset(x: 0, y: 30)
             HStack(spacing: 0) {
               ZStack() { }
               .frame(width: 26, height: 26)
             }
             .frame(width: 26, height: 26)
             .offset(x: 149.50, y: -42)
-            Rectangle()
-              .foregroundColor(.clear)
-              .frame(width: 107, height: 34)
-              .background(Color(red: 0.13, green: 0.17, blue: 0.15))
-              .cornerRadius(5)
-              .offset(x: 121, y: -173)
-            Rectangle()
-              .foregroundColor(.clear)
-              .frame(width: 107, height: 34)
-              .background(Color(red: 0.13, green: 0.17, blue: 0.15))
-              .cornerRadius(5)
-              .offset(x: 121, y: -132)
-            Rectangle()
-              .foregroundColor(.clear)
-              .frame(width: 107, height: 34)
-              .background(Color(red: 0.13, green: 0.17, blue: 0.15))
-              .cornerRadius(5)
-              .offset(x: 121, y: -91)
-            Text("1 medium s...")
-              .font(Font.custom("IvyPresto Headline", size: 12).weight(.bold))
+
+                // all text fields
+                
+                TextField("", text: $foodItem)
+                    .textFieldStyle(RoundedBorderTextFieldStyle()) // Add a rounded border for better visibility
+                    // .padding(.horizontal) // Add some horizontal padding if needed on both sides
+                    .frame(width: 150) // Set a fixed width for the TextField
+                    .font(.system(size: 16, weight: .bold)) // Set the font for the TextField
+                    .background(Color(red: 0.85098, green: 0.85098, blue: 0.85098)) // Set the background color
+                    .foregroundColor(Color.black)
+                    .offset(x: 110, y: -208)
+                    .colorScheme(.light)
+                    .padding(.trailing, 20) // Add padding to the right side of the TextField
+
+                TextField("", text: $servingSize)
+                    .textFieldStyle(RoundedBorderTextFieldStyle()) // Add a rounded border for better visibility
+                    // .padding(.horizontal) // Add some horizontal padding if needed on both sides
+                    .frame(width: 150) // Set a fixed width for the TextField
+                    .font(.system(size: 16, weight: .bold)) // Set the font for the TextField
+                    .background(Color(red: 0.85098, green: 0.85098, blue: 0.85098)) // Set the background color
+                    .foregroundColor(Color.black)
+                    .offset(x: -10, y: 30.50)
+                    .colorScheme(.light)
+                    .padding(.trailing, 20) // Add padding to the right side of the TextField
+                
+                
+             // .font(Font.custom("IvyPresto Headline", size: 12).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
               .offset(x: 121, y: -173)
-            Text("Breakfast")
+              .padding()
+                TextField("", text: $Meal) // meal
+                    .textFieldStyle(RoundedBorderTextFieldStyle()) // Add a rounded border for better visibility
+                    // .padding(.horizontal) // Add some horizontal padding if needed on both sides
+                    .frame(width: 150) // Set a fixed width for the TextField
+                    .font(.system(size: 16, weight: .bold)) // Set the font for the TextField
+                    .background(Color(red: 0.85098, green: 0.85098, blue: 0.85098)) // Set the background color
+                    .foregroundColor(Color.black)
+                    .offset(x: 110, y: -40.50)
+                    .colorScheme(.light)
+                    .padding(.trailing, 20) // Add padding to the right side of the TextField
               .font(Font.custom("IvyPresto Headline", size: 12).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: 121.50, y: -91)
-            Text("1")
+              
+                
+                TextField("", text: $NServings) // number of servings
+                    .textFieldStyle(RoundedBorderTextFieldStyle()) // Add a rounded border for better visibility
+                    // .padding(.horizontal) // Add some horizontal padding if needed on both sides
+                    .frame(width: 150) // Set a fixed width for the TextField
+                    .font(.system(size: 16, weight: .bold)) // Set the font for the TextField
+                    .background(Color(red: 0.85098, green: 0.85098, blue: 0.85098)) // Set the background color
+                    .foregroundColor(Color.black)
+                    .offset(x: 110, y: -90.50)
+                    .colorScheme(.light)
+                    .padding(.trailing, 20) // Add padding to the right side of the TextField
+                
               .font(Font.custom("IvyPresto Headline", size: 12).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
-              .offset(x: 153, y: -132)
+            
+                // Nutrition facts
+                TextField("", text: $nutritionFacts)
+                    .textFieldStyle(RoundedBorderTextFieldStyle()) // Add a rounded border for better visibility
+                    // .padding(.horizontal) // Add some horizontal padding if needed on both sides
+                    .frame(width: 300) // Set a fixed width for the TextField
+                    .font(.system(size: 16, weight: .bold)) // Set the font for the TextField
+                    .background(Color(red: 0.85098, green: 0.85098, blue: 0.85098)) // Set the background color
+                    .foregroundColor(Color.black)
+                    .offset(x: 10, y: 80.50)
+                    .colorScheme(.light)
+                    .padding(.trailing, 20) // Add padding to the right side of the TextField
+                
                 
                 NavigationLink(destination: FoodDiary()) {
                                     Text("Done")

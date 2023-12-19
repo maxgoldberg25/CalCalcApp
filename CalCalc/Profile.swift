@@ -179,11 +179,15 @@ struct Profile: View {
               .frame(width: 341, height: 46.05)
               .offset(x: 0, y: -133.39)
               ZStack() {
-                Text("Privacy Policy")
-                  .font(Font.custom("Open Sans", size: 15).weight(.semibold))
-                  .lineSpacing(18)
-                  .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                  NavigationLink(destination: Privacy()){
+                      Text("Privacy Policy")
+                        .font(Font.custom("Open Sans", size: 15).weight(.semibold))
+                        .lineSpacing(18)
+                        .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                        
+                  }
                   .offset(x: -121, y: -11.03)
+                
                 HStack(spacing: 0) {
                   ZStack() {
 

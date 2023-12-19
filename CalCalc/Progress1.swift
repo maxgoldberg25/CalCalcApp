@@ -133,8 +133,10 @@ struct Progress1: View {
                     .shadow(
                         color: Color(red: 0, green: 0, blue: 0, opacity: 0.30), radius: 2, y: 1
                     )
+              
                 Button{
-                    //add
+                    //action
+                    
                 } label: {
                     Text("Gain Weight")
                         .font(Font.custom("Arial", size: 20))
