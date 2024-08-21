@@ -64,8 +64,6 @@ To ensure CalcCalc meets the needs of its target users, extensive evaluation was
 
 ## Installation
 
-
-
 Clone the Repository
 Open your terminal and run the following command to clone the repository:
 ``` swift
@@ -86,6 +84,66 @@ Open the Xcode project or workspace file:
 ```
 open CalcCalc.xcodeproj
 ```
+
+
+## Setting Up the OpenAI API Key
+
+To use this project with the OpenAI API, you'll need to set up an API key. Follow the steps below to configure the key.
+
+### 1. **Obtain Your OpenAI API Key**
+
+1. Go to the [OpenAI API platform](https://platform.openai.com/signup) and sign up or log in.
+2. Navigate to the API keys section in your [OpenAI account](https://platform.openai.com/account/api-keys).
+3. Create a new API key or use an existing one. Copy the key to your clipboard.
+
+### 2. **Set Up the API Key in Your Local Environment**
+
+To keep your API key secure and avoid hardcoding it into your application, set it up as an environment variable.
+
+#### For macOS/Linux:
+
+1. **Open Terminal.**
+
+2. **Edit Your Shell Configuration File:**
+   - If you're using `zsh`, edit `~/.zshrc`:
+     ```bash
+     nano ~/.zshrc
+     ```
+   - If you're using `bash`, edit `~/.bashrc` or `~/.bash_profile`:
+     ```bash
+     nano ~/.bashrc
+     ```
+
+3. **Add the API Key to the File:**
+   Add the following line to the end of the file:
+   ```bash
+   export OPENAI_API_KEY="your-api-key-here"
+
+4. **Save and Apply the Changes:**
+   - Save the file (`Ctrl + X`, then `Y` to confirm, and `Enter`).
+   - Apply the changes:
+     ```bash
+     source ~/.zshrc  # or source ~/.bashrc
+     ```
+
+#### For Windows:
+
+1. **Open Command Prompt or PowerShell.**
+
+2. **Set the Environment Variable:**
+   - Command Prompt:
+     ```cmd
+     setx OPENAI_API_KEY "your-api-key-here"
+     ```
+   - PowerShell:
+     ```powershell
+     [System.Environment]::SetEnvironmentVariable('OPENAI_API_KEY', 'your-api-key-here', 'User')
+     ```
+
+3. **Restart Command Prompt/PowerShell:**
+   Close and reopen your terminal to ensure the environment variable is loaded.
+
+
 
 
 
