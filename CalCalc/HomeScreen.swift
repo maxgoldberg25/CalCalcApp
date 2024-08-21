@@ -137,6 +137,18 @@ struct HomeScreen: View {
               .font(Font.custom("IvyPresto Headline", size: 30).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
               .offset(x: -144.50, y: -235)
+                NavigationLink(destination: ChatBot()){ //Chatbot nav
+                    HStack {
+                        Text("Ask CalcAI")
+                            .font(Font.custom("Arial Rounded MT Bold", size: 18).weight(.bold))
+                            .tracking(0.12)
+                            .foregroundColor(Color(red: 0.68, green: 0.85, blue: 0.90)) // Light blue color
+                        
+                        Image(systemName: "lightbulb.fill") // Bulb icon
+                            .foregroundColor(Color(red: 0.68, green: 0.85, blue: 0.90)) // Match icon color with text
+                    }
+                }
+                .offset(x: 123.50, y: -292)
             Text("Calories Remaining\n")
               .font(Font.custom("IvyPresto Headline", size: 20).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))

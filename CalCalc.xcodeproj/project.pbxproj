@@ -11,6 +11,8 @@
 		53074C342B22614800F7B8CE /* AddExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53074C332B22614800F7B8CE /* AddExercise.swift */; };
 		53074C362B2267D200F7B8CE /* AddCardio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53074C352B2267D200F7B8CE /* AddCardio.swift */; };
 		53074C382B226B5700F7B8CE /* AddManualFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53074C372B226B5700F7B8CE /* AddManualFood.swift */; };
+		537E40852C764961000F0ACC /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 537E40842C764961000F0ACC /* OpenAISwift */; };
+		537E40892C765DD7000F0ACC /* ChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E40882C765DD7000F0ACC /* ChatBot.swift */; };
 		538113662B22307300AC5F4B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538113652B22307300AC5F4B /* Profile.swift */; };
 		53C186BB2B17BBBD00F02128 /* CalCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C186BA2B17BBBD00F02128 /* CalCalcApp.swift */; };
 		53C186BD2B17BBBD00F02128 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C186BC2B17BBBD00F02128 /* ContentView.swift */; };
@@ -38,6 +40,7 @@
 		53074C332B22614800F7B8CE /* AddExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercise.swift; sourceTree = "<group>"; };
 		53074C352B2267D200F7B8CE /* AddCardio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardio.swift; sourceTree = "<group>"; };
 		53074C372B226B5700F7B8CE /* AddManualFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddManualFood.swift; sourceTree = "<group>"; };
+		537E40882C765DD7000F0ACC /* ChatBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBot.swift; sourceTree = "<group>"; };
 		538113652B22307300AC5F4B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		53C186B72B17BBBD00F02128 /* CalCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C186BA2B17BBBD00F02128 /* CalCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCalcApp.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537E40852C764961000F0ACC /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +119,7 @@
 				53C4ADD82B317C3400B3C538 /* Privacy.swift */,
 				53C186BE2B17BBC000F02128 /* Assets.xcassets */,
 				53C186C02B17BBC000F02128 /* Preview Content */,
+				537E40882C765DD7000F0ACC /* ChatBot.swift */,
 			);
 			path = CalCalc;
 			sourceTree = "<group>";
@@ -151,6 +156,9 @@
 			dependencies = (
 			);
 			name = CalCalc;
+			packageProductDependencies = (
+				537E40842C764961000F0ACC /* OpenAISwift */,
+			);
 			productName = CalCalc;
 			productReference = 53C186B72B17BBBD00F02128 /* CalCalc.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 53C186AE2B17BBBD00F02128;
+			packageReferences = (
+				537E40832C764961000F0ACC /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 53C186B82B17BBBD00F02128 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,6 +221,7 @@
 				53C186CD2B17DF6300F02128 /* Progress1.swift in Sources */,
 				53D7344B2B1A87F10025EC21 /* Progress10.swift in Sources */,
 				53C186BD2B17BBBD00F02128 /* ContentView.swift in Sources */,
+				537E40892C765DD7000F0ACC /* ChatBot.swift in Sources */,
 				53074C342B22614800F7B8CE /* AddExercise.swift in Sources */,
 				53D734452B1A85480025EC21 /* Progress7.swift in Sources */,
 				53C186BB2B17BBBD00F02128 /* CalCalcApp.swift in Sources */,
@@ -430,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		537E40832C764961000F0ACC /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		537E40842C764961000F0ACC /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 537E40832C764961000F0ACC /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53C186AF2B17BBBD00F02128 /* Project object */;
 }

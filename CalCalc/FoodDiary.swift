@@ -33,6 +33,7 @@ struct FoodDiary: View {
             .frame(width: 52, height: 12)
             .offset(x: 0.50, y: -354.50)
             ZStack() {
+                
               
               HStack(alignment: .top, spacing: 2) {
                 ZStack() {
@@ -155,6 +156,18 @@ struct FoodDiary: View {
               .background(Color(red: 0.20, green: 0.27, blue: 0.24))
               .cornerRadius(5)
               .offset(x: -0.50, y: -126)
+                NavigationLink(destination: ChatBot()){ //Chatbot nav
+                    HStack {
+                        Text("Ask CalcAI")
+                            .font(Font.custom("Arial Rounded MT Bold", size: 18).weight(.bold))
+                            .tracking(0.12)
+                            .foregroundColor(Color(red: 0.68, green: 0.85, blue: 0.90)) // Light blue color
+                        
+                        Image(systemName: "lightbulb.fill") // Bulb icon
+                            .foregroundColor(Color(red: 0.68, green: 0.85, blue: 0.90)) // Match icon color with text
+                    }
+                }
+                .offset(x: 123.50, y: -292)
             Text("Today")
               .font(Font.custom("IvyPresto Headline", size: 30).weight(.bold))
               .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
