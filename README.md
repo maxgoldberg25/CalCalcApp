@@ -32,6 +32,16 @@ Evaluating User Satisfaction and Effectiveness
 
 To ensure CalcCalc meets the needs of its target users, extensive evaluation was conducted with a diverse group of University of Rochester students. Tasks designed to assess calorie tracking accuracy, personalized goal management, and interface satisfaction provided valuable insights. Participants reported high satisfaction with the app's ability to log and calculate calorie intake accurately, set and adapt health goals efficiently, and navigate its intuitive interface. These evaluations confirmed CalcCalc's effectiveness in helping users achieve their fitness objectives.
 
+User Experience Score
+
+CalcCalc achieved a remarkable UX score of 92 out of 100. This score, reflecting the comprehensive measurement of session quality, indicates an excellent user experience based on several key performance factors:
+
+- Session Logon Duration: Measures the time taken to launch the app.
+- Session Responsiveness: Assesses how quickly the app responds during use.
+- Session Availability: Indicates the success rate of establishing a connection when the app is launched.
+- Session Resilience: Evaluates the app’s ability to reconnect over a sluggish network.
+
+These factors, benchmarked dynamically over a 30-day period, contribute to the overall UX score. A score of 92 signifies that CalcCalc provides an excellent user experience with minimal delays, high responsiveness, and reliable connectivity, ensuring users enjoy a seamless and efficient session while using the app.
   </p>
   
 
